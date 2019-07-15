@@ -32,3 +32,8 @@ git clone https://github.com/EAIBOT/ydlidar.git
 cd ~/racecar_ws/.catkin_ws
 catkin_make
 ```
+
+Open the user crontab file with `crontab -e` and add the following line:
+```
+@reboot /home/racecar/racecar_ws/.scripts/cron_jupyter.bash
+```

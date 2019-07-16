@@ -1,4 +1,15 @@
 # racecar-mn
+
+## Drivers
+
+
+```sh
+# USB Wifi Dongle
+# Source: https://devtalk.nvidia.com/default/topic/1049303/jetson-nano/jetson-nano-wifi-/2
+echo "blacklist rtl8192cu" | sudo tee -a /etc/modprobe.d/blacklist.conf
+echo options rtl8xxxu ht40_2g=1 dma_aggregation=1 | sudo tee /etc/modprobe.d/rtl8xxxu.conf
+```
+
 ## Software Setup
 
 Note: Assumes username/hostname is `racecar@racecar`
